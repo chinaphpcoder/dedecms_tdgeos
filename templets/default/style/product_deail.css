@@ -1,0 +1,199 @@
+/* 视频列表页 开始 */
+
+
+
+.main-content{ width:880px; margin:0px auto; padding:0px;}
+.container{ }
+
+/* -------------------------------- 
+
+xpopup 
+
+-------------------------------- */
+.cd-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(9, 9, 9, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+.cd-popup.is-visible {
+  opacity: 1;
+  z-index:999999999;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+
+.cd-popup-container {
+  position: relative;
+  width: 90%;
+  max-width:850px;
+  margin:5% auto !important;
+  z-index:3 !important;
+  background: #f1f1f1;
+/*  border-radius: .25em .25em .4em .4em;*/
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-40px);
+  -moz-transform: translateY(-40px);
+  -ms-transform: translateY(-40px);
+  -o-transform: translateY(-40px);
+  transform: translateY(-40px);
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-backface-visibility: hidden;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.cd-popup-container p {
+  padding: 10px 0px;
+}
+.cd-popup-container .cd-buttons:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cd-popup-container .cd-buttons li {
+  float: left;
+  width: 50%;
+}
+.cd-popup-container .cd-buttons a {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #FFF;
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.cd-popup-container .cd-buttons li:first-child a {
+  background: #fc7169;
+  border-radius: 0 0 0 .25em;
+}
+.no-touch .cd-popup-container .cd-buttons li:first-child a:hover {
+  background-color: #fc8982;
+}
+.cd-popup-container .cd-buttons li:last-child a {
+  background: #b6bece;
+  border-radius: 0 0 .25em 0;
+}
+.no-touch .cd-popup-container .cd-buttons li:last-child a:hover {
+  background-color: #c5ccd8;
+}
+.cd-popup-container .cd-popup-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+}
+.cd-popup-container .cd-popup-close::before, .cd-popup-container .cd-popup-close::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  width: 14px;
+  height: 3px;
+  background-color: #8f9cb5;
+}
+.cd-popup-container .cd-popup-close::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 8px;
+}
+.cd-popup-container .cd-popup-close::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  right: 8px;
+}
+.is-visible .cd-popup-container {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+.modal .close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #757575;
+    cursor: pointer;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    z-index: 10;
+    border-radius: 15px;
+}
+.modal .close .iconfont {
+    font-size: 24px;
+    font-weight: 200;
+    vertical-align: middle;
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* 视频列表页 结束 */
+
+
+
+.detail_main { width:918px; padding:30px 20px 0 20px; overflow:hidden;}
+.detail_title { float:none; margin:0; padding-bottom:9px; border-bottom:2px solid #666666;}
+
+.detail_banner { width:100%; height:500px; position:relative; margin-top:70px;}
+.detail_youtube { display:block; position:absolute; left:0; bottom:0; width:143px; height:88px; background:url(../images/detail_youtube.jpg) no-repeat; z-index:999999;}
+.detail_wall { width:843px; height:480px; overflow:hidden; margin-right:200px;}
+.detail_wall li { width:843px; height:480px; overflow:hidden;}
+.detail_btn { width:102px; position:absolute; right:0px; top:0; padding-left:650px; height:465px; overflow:hidden;}
+.detail_btn li { float:left; width:100px; height:57px; overflow:hidden; border: 1px solid #ececec; margin:7px 0 0 0;}
+.detail_btn li img { width:100px; height:57px; border-bottom:0px;}
+.detail_btn .come_on { border:1px solid #1a75ce;}
+
+.detail_pdf { padding-left:22px; background:url(../images/detail_pdf.gif) left center no-repeat; font-weight:bold; height:17px; }
+.detail_pdf a {text-decoration:underline; color:#1a75ce;}
+.detail_pdf a:hover{color:#74b3f2;} 
+
+.detail_mid { height:226px; margin:40px 0; overflow:hidden;}
+.detail_award { float:left; width:660px;}
+.detail_award_title { width:122px; height:26px; line-height:26px; color:#FFFFFF; text-align:center; font-weight:bold; background:url(../images/btn.gif) 0 -26px no-repeat;}
+.detail_award_column { display:block; height:50px; margin:15px 0 0 0; color:#666666; cursor:pointer;}
+.detail_award_column:hover { background-color:#eaeaea; color:#333333;}
+.detail_award_column img { float:left; width:50px; height:50px;}
+.detail_award_column p { float:right; width:595px; line-height:1.5; padding-top:7px;}
+.detail_icon { float:right; width:229px; margin-top:26px;}
