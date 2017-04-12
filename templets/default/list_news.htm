@@ -1,0 +1,143 @@
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>影驰科技-全心致力于计算机硬件的生产和销售！</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="影驰科技是业内最具实力的显卡、电源、固态硬盘生产与销售公司。">
+    <meta name="keywords" content="显卡，影驰，影驰显卡，影驰官网，影驰科技，SSD，固态硬盘，电源，电脑电源，台式机电源，NVIDIA，英伟达，影驰首页，影迷会，影驰玩家俱乐部，影驰BBS">
+    <meta name="author" content="galaxy">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link href="{dede:global.cfg_templets_skin/}/style/public.css" rel="stylesheet" type="text/css">
+    <link href="{dede:global.cfg_templets_skin/}/style/home.css" rel="stylesheet" type="text/css">
+    <!--nav JS开始-->
+    <script src="{dede:global.cfg_templets_skin/}/js/jquery.min.js"></script>
+    <!--nav JS结束-->
+    <!--banner JS开始-->
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-banner.js"></script>
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/responsiveslides.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // Slideshow 
+            $("#slider01").responsiveSlides({
+                auto: true,
+                pager: false,
+                nav: true,
+                speed: 500,
+                timeout: 4000,
+                pager: true,
+                pauseControls: true,
+                namespace: "callbacks"
+            });
+        });
+    </script>
+    <!--banner JS结束-->
+    <!--专题活动 JS结束-->
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/mobilyslider.js"></script>
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/init.js"></script>
+    <!--专题活动 JS结束-->
+    <!--视频专区 JS结束-->
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/slider_v.js"></script>
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/init_v.js"></script>
+    <!--视频专 区JS结束-->
+    <!--语言切换 JS结束-->
+    <script type="text/javascript">
+        jQuery(function () {
+            jQuery("#lang").hover(function () {
+                jQuery("#lang .none").show().css("background-color", "#fff").focus();
+                jQuery("#lang .none").hover(function () {
+                    jQuery(this).css("background-color", "#f4f4f4");
+                }, function () {
+                    jQuery(this).css("background-color", "#fff");
+                });
+
+                jQuery("#lang .none").click(function () {
+                    jQuery("#selected").html(jQuery(this).html());
+                });
+            }, function () {
+                jQuery("#lang .none").hide();
+            });
+        });
+    </script>
+    <!--语言切换 JS结束-->
+    
+    <link href="{dede:global.cfg_templets_skin/}/style/product_deail.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="articlelist">
+{dede:include filename="head.htm"/}
+<!-- /header -->
+<div class="w960 center clear mt1">
+ <div class="pleft">
+  <div class="place"> <strong>当前位置:</strong> {dede:field name='position'/} </div>
+  <!-- /place -->
+  <div class="listbox">
+   <ul class="e2">
+    {dede:list pagesize='10'}
+    <li> [field:array runphp='yes']@me = (empty(@me['litpic']) ? "" : "<a href='{@me['arcurl']}' class='preview'><img src='{@me['litpic']}'/></a>"); [/field:array]
+     [<b>[field:typelink/]</b>] <a href="[field:arcurl/]" class="title">[field:title/]</a> <span class="info"> <small>日期：</small>[field:pubdate function="GetDateTimeMK(@me)"/] <small>点击：</small>[field:click/] <small>好评：</small>[field:scores/] </span>
+     <p class="intro"> [field:description/]... </p>
+    </li>
+    {/dede:list}
+   </ul>
+  </div>
+  <!-- /listbox -->
+  <div class="dede_pages">
+   <ul class="pagelist">
+    {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
+   </ul>
+  </div>
+  <!-- /pages -->
+ </div>
+ <!-- /pleft -->
+ <div class="pright">
+  <div>
+   <dl class="tbox">
+    <dt><strong>栏目列表</strong></dt>
+    <dd>
+     <ul class="d6">
+      {dede:channel type='son' currentstyle="
+      <li><a href='~typelink~' class='thisclass'>~typename~</a></li>
+      "}
+      <li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+      {/dede:channel}
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <div id="listRtPicAD" style="margin:10px auto">{dede:mda name='250x250_SSP'/}</div>
+  <div class="commend">
+   <dl class="tbox light">
+    <dt class='light'><strong>推荐内容</strong></dt>
+    <dd class='light'>
+     <ul class="d4">
+      {dede:arclist flag='c' titlelen=42 row=6}
+      <li><a href="[field:arcurl/]">[field:title/]</a>
+       <p>[field:description function='cn_substr(@me,80)'/]...</p>
+      </li>
+      {/dede:arclist}
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <!-- /commend -->
+  <div class="hot mt1 light">
+   <dl class="tbox">
+    <dt class='light'><strong>热点内容</strong></dt>
+    <dd class='light'>
+     <ul class="c1 ico2">
+      {dede:arclist row=10 orderby=click}
+      <li><a href="[field:arcurl/]">[field:title/]</a></li>
+      {/dede:arclist}
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  {dede:qrcode/}
+  <div id="listRtPicAD2" style="margin:10px auto">{dede:mda name='250x250'/}</div>
+ </div>
+ <!-- /pright -->
+</div>
+<div id="innerfooterAD" style="margin:10px auto; width:726px">{dede:mda name='728x90'/}</div>
+{dede:include filename="footer.htm"/}
+<!-- /footer -->
+</body>
+</html>

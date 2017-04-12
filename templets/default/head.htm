@@ -3,17 +3,19 @@
     <li class="drop-menu-effect">
         <a href="/" class="logo" style=""><img src="{dede:global.cfg_templets_skin/}/images/logo.jpg" width="142" height="120"></a>
     </li>
-    {dede:channel type='top' row='10'}
-
+    {dede:channelartlist row=10 typeid='top'}
     <li class="drop-menu-effect">
-            <a href='[field:typeurl/]' [field:rel/]><span>[field:typename/]</span></a>
+            <a href='{dede:field name='typeurl'/}' ><span>{dede:field name='typename'/}</span></a>
             <ul class="submenu news" style="opacity: 0; height: 0px; display: none;">
                 <li>
                     <div style="padding-top: 30px;">
-                        <a href="/__ZH_GB__/News5/NewsIndex" class="">产品新闻</a><a href="/__ZH_GB__/News5/news_special" class="">专题活动</a><a href="/__ZH_GB__/News5/news_video" class="">影驰视频</a><a href="/__ZH_GB__/News5/news_wallpaper" class="">影驰壁纸</a></div>
+                    {dede:channel type='son' row='8' noself='true'} 
+                        <a href='[field:typelink/]'>[field:typename/]</a>
+                    {/dede:channel} 
+                    </div>
                 </li>
             </ul>
         </li>
-    {/dede:channel}
+    {/dede:channelartlist}
 </ul>
 </div>
