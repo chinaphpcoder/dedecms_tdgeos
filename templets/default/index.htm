@@ -157,7 +157,7 @@
         </div>
     </div>
    
-        <!---------------底部--------------------------------->
+        <!-- -------------底部------------------------------- -->
         <div class="homeboot">
             <div class="homeboot_box">
                 <div class="homeboot_box_ma">
@@ -216,84 +216,12 @@
         </div>
 
 
-</form>    <script type="text/javascript">
-        function dropMenu(obj) {
-            $(obj).each(function () {
-                var theSpan = $(this);
-                var theMenu = theSpan.find(".submenu");
-                var tarHeight = theMenu.height();
-                theMenu.css({ height: 0, opacity: 0 });
-
-                var t1;
-
-                function expand() {
-                    clearTimeout(t1);
-                    theSpan.find('a').addClass("selected");
-                    theMenu.stop().show().animate({ height: tarHeight, opacity: 1 }, 200);
-                }
-
-                function collapse() {
-                    clearTimeout(t1);
-                    t1 = setTimeout(function () {
-                        theSpan.find('a').removeClass("selected");
-                        theMenu.stop().animate({ height: 0, opacity: 0 }, 200, function () {
-                            $(this).css({ display: "none" });
-                        });
-                    }, 250);
-                }
-
-                theSpan.hover(expand, collapse);
-                theMenu.hover(expand, collapse);
-            });
-        }
-
-        $(document).ready(function () {
-            dropMenu(".drop-menu-effect");
-        });
-
-        //公共搜索
-        $(function () {
-            $('#key').bind('keypress', function (event) {
-                if (event.keyCode == "13") {
-                    var key = $("#key").val();
-                    window.location.href = "/__ZH_GB__/Product5/SearchProduct?key=" + key;
-                }
-            });
-        });
-        $(".btnSearch").click(function () {
-            var key = $("#key").val(); window.location.href = "/__ZH_GB__/Product5/SearchProduct?key=" + key;
-        })
-
-        //内部搜索
-        $(function () {
-            $('#key1').bind('keypress', function (event) {
-                if (event.keyCode == "13") {
-                    var key = $("#key1").val();
-                    window.location.href = "/__ZH_GB__/Product5/SearchProduct?key=" + key;
-                }
-            });
-        });
-        $(".btnSearch1").click(function () {
-            var key = $("#key1").val(); window.location.href = "/__ZH_GB__/Product5/SearchProduct?key=" + key;
-        })
-   
-        $(function () {
-            // 悬浮窗口
-            $(".yb_conct").hover(function () {
-                $(".yb_conct").css("right", "5px");
-                $(".yb_bar .yb_ercode").css('height', '200px');
-            }, function () {
-                $(".yb_conct").css("right", "-127px");
-                $(".yb_bar .yb_ercode").css('height', '53px');
-            });
-            // 返回顶部
-            $(".yb_top").click(function () {
-                $("html,body").animate({
-                    'scrollTop': '0px'
-                }, 300)
-            });
-        });
-    </script>
+</form>
 
 
-<div><object id="ClCache" click="sendMsg" host="" width="0" height="0"></object></div></body></html>
+
+<div><object id="ClCache" click="sendMsg" host="" width="0" height="0"></object></div>
+        {dede:include filename="footer.htm"/}
+        <!-- /footer -->
+    </body>
+</html>

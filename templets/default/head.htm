@@ -3,13 +3,13 @@
     <li class="drop-menu-effect">
         <a href="/" class="logo" style=""><img src="{dede:global.cfg_templets_skin/}/images/logo.jpg" width="142" height="120"></a>
     </li>
-    {dede:channelartlist row=10 typeid='top'}
-    <li class="drop-menu-effect">
+    {dede:channelartlist row=4 typeid='top' cacheid='channelsonlist'}
+        <li class="drop-menu-effect">
             <a href='{dede:field name='typeurl'/}' ><span>{dede:field name='typename'/}</span></a>
             <ul class="submenu news" style="opacity: 0; height: 0px; display: none;">
                 <li>
                     <div style="padding-top: 30px;">
-                    {dede:channel type='son' row='8' noself='true'} 
+                    {dede:channel type='son' noself='yes'} 
                         <a href='[field:typelink/]'>[field:typename/]</a>
                     {/dede:channel} 
                     </div>

@@ -1,0 +1,276 @@
+
+/* 产品列表页开始 */
+.content_all{ width:100%; font-family:"Microsoft YaHei";background:#f6f6f6; }
+.neiye_titel{ color:#777; padding:15px 0 15px 0; line-height:20px; font-size:14px; width:1200px; margin:0 auto;}
+.neiye_titel a{ color:#777; text-decoration:none;}
+.neiye_titel a:hover{ color:#1a75ce;}
+
+.content_pro{width:1200px; margin:0 auto;}
+.content_pro_list{ background:#fff; padding:45px; padding-bottom:65px;}
+.content_pro_list_search{}
+.content_pro_list_search p a{ display:block; float:left; width:70px; height:43px;  background:url(/areas/__ZH_GB__/images/product_01.jpg) no-repeat top center; line-height:43px; border:1px solid #ebebeb; padding-left:0px; text-align:left; padding-left:73px; text-decoration:none; font-size:14px; color:#777; margin-bottom:10px;}
+.content_pro_list_search p a:hover{ background:url(/areas/__ZH_GB__/images/product_01_pre.jpg) no-repeat top center; color:#fff; border:1px solid #509ce7; }
+.sear input{float:left; width:500px;border:1px solid #509ce7; padding-left:10px; padding-right:10px; line-height:43px; height:43px; color:#999; margin-left:20px;}
+
+
+.content_pro_list_avg { display: block; margin-top:10px; font-size:14px;clear:both;}
+.content_pro_list_avg P{ float:left; margin-bottom:10px;}
+.content_pro_list_avg P a{ display:block; float:left; width:70px; height:43px;  background:url(/areas/__ZH_GB__/images/product_02.jpg) no-repeat top center; line-height:43px; border:1px solid #ebebeb; padding-left:0px; text-align:left; padding-left:73px; text-decoration:none; font-size:14px; color:#777;}
+.content_pro_list_avg P a:hover{ background:url(/areas/__ZH_GB__/images/product_02_pre.jpg) no-repeat top center; color:#fff; border:1px solid #509ce7; }
+
+.content_pro_list_avg div.yiji{padding:10px; padding-left:150px; margin-bottom:10px;}
+.content_pro_list_avg div.yiji a{ line-height:24px; height:30px; padding-right:10px;padding-left:10px; display:block; float:left; text-decoration:none; color:#777;}
+.content_pro_list_avg div.yiji a:hover{color:#1a75ce; }
+
+#product_1{ border-top:1px solid #e8f1fa; border-bottom:1px solid #e8f1fa; margin-top:35px;  height:30px; padding-top:10px; padding-left:81px;margin-bottom:10px; background:url(/areas/__ZH_GB__/images/jiantou.jpg) no-repeat 210px 0;}
+#product_1 a{ display:block; float:left; padding-top:0px; padding-left:10px; padding-right:10px; color:#bbb; text-decoration: none;}
+#product_1 a:hover{ color:#1a75ce;}
+
+#product_2{background:url(/areas/__ZH_GB__/images/jiantou.jpg) no-repeat 335px 0; border-top:1px solid #e8f1fa; border-bottom:1px solid #e8f1fa; margin-top:35px;  height:30px; padding-top:10px; padding-left:298px;margin-bottom:10px;}
+#product_2 a{ display:block; float:left; padding-top:0px; padding-left:10px; padding-right:10px; color:#bbb; text-decoration: none;}
+#product_2 a:hover{ color:#1a75ce;}
+
+#product_3{background:url(/areas/__ZH_GB__/images/jiantou.jpg) no-repeat 465px 0;  border-top:1px solid #e8f1fa; border-bottom:1px solid #e8f1fa; margin-top:35px;  height:30px; padding-top:10px; padding-left:336px;margin-bottom:10px;}
+#product_3 a{ display:block; float:left; padding-top:0px; padding-left:10px; padding-right:10px; color:#bbb; text-decoration: none;}
+#product_3 a:hover{ color:#1a75ce;}
+
+#product_4{background:url(/areas/__ZH_GB__/images/jiantou.jpg) no-repeat 600px 0;  border-top:1px solid #e8f1fa; border-bottom:1px solid #e8f1fa; margin-top:35px; height:30px; padding-top:10px;  padding-left:500px;margin-bottom:10px;}
+#product_4 a{ display:block; float:left; padding-top:0px; padding-left:10px; padding-right:10px; color:#bbb; text-decoration: none;}
+#product_4 a:hover{ color:#1a75ce;}
+
+#product_5{background:url(/areas/__ZH_GB__/images/jiantou.jpg) no-repeat 730px 0;  border-top:1px solid #e8f1fa; border-bottom:1px solid #e8f1fa; margin-top:35px;  height:30px; padding-top:10px; padding-left:705px;margin-bottom:10px;}
+#product_5 a{ display:block; float:left; padding-top:0px; padding-left:10px; padding-right:10px; color:#bbb; text-decoration: none;}
+#product_5 a:hover{ color:#1a75ce;}
+
+#product_6{background:url(/areas/__ZH_GB__/images/jiantou.jpg) no-repeat 840px 0;  border-top:1px solid #e8f1fa; border-bottom:1px solid #e8f1fa; margin-top:35px;  height:30px; padding-top:10px; padding-left:710px;margin-bottom:10px;}
+#product_6 a{ display:block; float:left; padding-top:0px; padding-left:10px; padding-right:10px; color:#bbb; text-decoration: none;}
+#product_6 a:hover{ color:#1a75ce;}
+
+
+.content_pro_list_ssd { display: block;font-size:14px; width:100%; clear:both; }
+.content_pro_list_ssd P{ float:left;}
+.content_pro_list_ssd P a{ display:block; float:left; width:70px; height:43px;  background:url(/areas/__ZH_GB__/images/product_03.jpg) no-repeat top center; line-height:43px; border:1px solid #ebebeb; padding-left:0px; text-align:left; margin-bottom:10px; padding-left:73px; text-decoration:none; font-size:14px; color:#777; }
+.content_pro_list_ssd P a:hover{ background:url(/areas/__ZH_GB__/images/product_03_pre.jpg) no-repeat top center; color:#fff; border:1px solid #509ce7; }
+.content_pro_list_ssd div.text { padding:10px; padding-left:150px;}
+.content_pro_list_ssd div.text a{ display:block; float:left; padding-left:10px; padding-right:10px;color:#777; text-decoration: none;}
+.content_pro_list_ssd div.text a:hover{ color:#1a75ce;}
+
+.content_pro_list_neicun { display: block;font-size:14px; width:100%; clear:both; }
+.content_pro_list_neicun P{ float:left;}
+.content_pro_list_neicun P a{ display:block; float:left; width:70px; height:43px;  background:url(/areas/__ZH_GB__/images/product_04.jpg) no-repeat top center; line-height:43px; border:1px solid #ebebeb; padding-left:0px; text-align:left; margin-bottom:10px; padding-left:73px; text-decoration:none; font-size:14px; color:#777; }
+.content_pro_list_neicun P a:hover{ background:url(/areas/__ZH_GB__/images/product_04_pre.jpg) no-repeat top center; color:#fff; border:1px solid #509ce7; }
+.content_pro_list_neicun div.text { padding:10px; padding-left:150px;}
+.content_pro_list_neicun div.text a{ display:block; float:left; padding-left:10px; padding-right:10px;color:#777; text-decoration: none;}
+.content_pro_list_neicun div.text a:hover{ color:#1a75ce;}
+
+
+.content_pro_list_cunchu { display: block;font-size:14px; width:100%; clear:both; }
+.content_pro_list_cunchu P{ float:left;}
+.content_pro_list_cunchu P a{ display:block; float:left; width:70px; height:43px;  background:url(/areas/__ZH_GB__/images/product_06.jpg) no-repeat top center; line-height:43px; border:1px solid #ebebeb; padding-left:0px; text-align:left; margin-bottom:10px; padding-left:73px; text-decoration:none; font-size:14px; color:#777; }
+.content_pro_list_cunchu P a:hover{ background:url(/areas/__ZH_GB__/images/product_06_pre.jpg) no-repeat top center; color:#fff; border:1px solid #509ce7; }
+.content_pro_list_cunchu div.text { padding:10px; padding-left:150px;}
+.content_pro_list_cunchu div.text a{ display:block; float:left; padding-left:10px; padding-right:10px;color:#777; text-decoration: none;}
+.content_pro_list_cunchu div.text a:hover{ color:#1a75ce;}
+
+
+
+.content_pro_tip{ color:#777; padding:15px 0 15px 0; line-height:20px; font-size:14px;}
+
+/* -- 列表开始-- */
+.content_pro_le{ clear:both;  width:100%; background:#f6f6f6;}
+.content_pro_le ul {   clear:both;  width:1230px; margin:0 auto; 
+    list-style-type: none; 
+}
+.content_pro_le ul li{ float:left; margin-bottom:20px;}
+.review-item {
+    position: relative;
+    float: left;
+    width: 285px; height:245px;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    background: #fff;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+	}
+.review-item:hover {
+    z-index: 2;
+    -webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    -webkit-transform: translate3d(0, -2px, 0);
+    transform: translate3d(0, -2px, 0);
+}
+.content_pro_le img{ width:255px; height:150px; padding:15px;}
+.content_pro_le h5 {  font-size:14px; color:#333; font-weight:inherit; text-align:center; padding:15px; margin-bottom:25px; display:block;}
+.content_pro_le h5 a{  color:#333; text-decoration:none; padding-bottom:15px;}
+.content_pro_le h5 a:hover{ color:#1a75ce;}
+
+.content_pro_le div.pages{margin:0 auto; clear:both; font-size:14px; color:#999; text-align:center; padding-top:30px; padding-bottom:50px;}
+.content_pro_le div.pages a{  background:#fff; height:40px; line-height:40px; margin-right:10px;  padding:7px 17px;color:#666; text-decoration:none; margin-top:25px; margin-bottom:25px; margin-top:50px;}
+.content_pro_le div.pages a:hover{ color:#fff; background:#1a75ce;}
+.content_pro_le div.pages a.dd{ color:#fff; background:#1a75ce;}
+
+/* -- 产品详情开始-- */
+.details_pro{ padding:40px; background:#fff; }
+.details_buy{ background:url(/areas/__ZH_GB__/images/buybg.jpg) no-repeat; width:93px; height:44px; float:right; padding-left:70px;}
+.details_buy a{ padding-right:5px;}
+.details_pic{}
+/* -- 产品相册开始-- */
+
+.pikachoose { clear:both; height:550px; padding-top:30px;}
+
+/* Style the thumbnails */
+.pika-thumbs{ padding: 0 16px; height: 75px; }
+.pika-thumbs li{ width: 100px; height:57px; margin: 10px 0 0 17px; padding: 0; overflow: hidden; border:1px solid #e5e5e5;
+    float: left; list-style-type: none;padding: 0px; margin: 0 5px; cursor: pointer;}
+.pika-thumbs li .clip {position:relative;height:100%;text-align: center; vertical-align: middle; overflow: hidden;}
+
+/* The stage is the wrapper. The image fills 100% the height of the stage */
+.pika-stage, .pika-textnav {}
+.pika-stage {position: relative; height:600px;}
+.pika-stage img{ width:845px; height:480px; margin-left:70px; margin-top:35px; }
+.pika-stage .caption {position: absolute; 
+    color: #fafafa; padding: 10px; text-align: right; bottom: 50px; right: 10px;}
+.pika-stage .caption p {padding: 0; margin: 0; line-height: 14px;}
+
+/* Ths play, pause, prev and next buttons */
+.pika-imgnav a {position: absolute; text-indent: -5000px; display: block;z-index:3;}
+.pika-imgnav a.previous {background: url(prev.png) no-repeat left 45%; height: 100%; width: 50px; top: 40px; left: 10px;cursor:pointer; }
+.pika-imgnav a.next {background: url(prev.png) no-repeat left 45%; height: 100%; width: 50px; top: 40px; left: 10px;cursor:pointer;}
+.pika-imgnav a.play {background: url(prev.png) no-repeat left 45%; height: 100%; width: 50px; top: 40px; left: 10px;cursor:pointer;}
+.pika-imgnav a.pause {background: url(prev.png) no-repeat left 45%; height: 100%; width: 50px; top: 40px; left: 10px;cursor:pointer;}
+
+/* The previous and next textual buttons */
+.pika-textnav {overflow: hidden; margin: 0px 0 0 0;bottom:0px; position:absolute;}
+.pika-textnav a {font-size: 12px; text-decoration: none; color: #333; padding: 4px; }
+.pika-textnav a.previous {float: left; width: auto; display: none;}
+.pika-textnav a.next {float: right; width: auto; display: none;}
+
+/*for the tool tips*/
+.pika-tooltip{font-size:12px;position:absolute;color:white;padding:3px; background-color: rgba(0,0,0,0.7);border:3px solid black;}
+.pika-counter{position: absolute;bottom: 45px;left:15px;color:white;background:rgba(0,0,0,0.7);font-size:11px;padding:3px;-moz-border-radius: 5px;border-radius:5px; display: none;}
+
+/* If using user thumbnails there's a pause well the new large image loads. This is the loader for that */		
+.pika-loader{ background:url(loading.gif) 3px 3px no-repeat #000;  color:white; width:60px; font-size:11px; padding:5px 3px; 
+    text-align:right; position:absolute; top:15px; right:15px; }
+
+/*if you just want to adjust the size of the stage and the thumbnails, you can do so by editing the following lines: */
+.pika-thumbs li{width: 90px; height:55px;}
+.pikachoose{width:100%; position:relative;}
+#pikame{width: 100px; height:57px;}
+.pika-thumbs {margin: 10px 0 0 17px; width:250px;position: absolute;top: 10px;right: 30px;}
+.pika-thumbs li { margin: 5px 5px;}
+
+/* jCarousel Styles */
+/*if you're not using the carousel you can delete everything below this */
+.jcarousel-skin-pika{position:absolute;top:50px;right:0px;}
+.jcarousel-skin-pika .jcarousel-container-vertical { width: 100px;height:460px; background:#fff;  overflow:hidden; border-top:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5;}
+.jcarousel-skin-pika .jcarousel-clip-vertical { width: 100px;height: 57px;}
+.jcarousel-skin-pika .jcarousel-item-vertical { margin-top: 10px;}
+
+
+
+/* 详细介绍选项卡开始 */
+.xiangxibox{ width: 1200px;
+	  margin: 0px auto ;
+	  font-family: Arial, Helvetica;
+	  font-size: small;
+	  background-color: #f6f6f6; margin-bottom:50px; margin-top:20px;
+}
+#tabs {
+	  overflow: hidden;
+	  width: 100%;
+	  margin: 0;
+	  padding: 0;
+	  list-style: none;font-family:"Microsoft YaHei"; font-size:14px;
+	}
+
+	#tabs li {
+	  float: left;
+	  margin: 0 -15px 0 0;
+	}
+
+	#tabs a {
+	  float: left;
+	  position: relative;
+	  padding: 0 40px;
+	  height: 0;
+	  line-height: 30px;
+	  text-transform: uppercase;
+	  text-decoration: none;
+	  color: #fff;      
+	  border-right: 30px solid transparent;
+	  border-bottom: 30px solid #3D3D3D;
+	  border-bottom-color: #777\9;
+	  opacity: .3;
+	  filter: alpha(opacity=30);      
+	}
+
+	#tabs a:hover,
+	#tabs a:focus {
+	  border-bottom-color: #3c8ad5;
+	  opacity: 1;
+	  filter: alpha(opacity=100);
+	}
+
+	#tabs a:focus {
+	  outline: 0;
+	}
+
+	#tabs #current {
+	  z-index: 3;
+	  border-bottom-color: #3c8ad5;
+	  opacity: 1;
+	  filter: alpha(opacity=100);      
+	}
+
+	/* ----------- */
+	#content {
+	    background: #fff;
+	    border-top: 2px solid #3c8ad5;
+	    font-family:"Microsoft YaHei"; font-size:14px; line-height:30px; color:#666; 
+	    /*height: 220px;*/
+	}
+	#content h2,
+	  #content h3,
+	  #content p {
+	   
+	}
+	/* -----产品终极页tab切换内容样式 开始------ */
+	#tab1{ padding:50px 100px 20px 100px; width:1000px;}
+	#tab2{width:1200px; margin:0px;}
+	.spec_xq{width:1200px;}
+	.spec_xq h3{ font-size:16px; font-weight:bold; color:#000000; background:#f5fafe;width: 1200px;height:40px; line-height:40px;}
+	.spec_xq tr{ padding-left:100px; text-indent:5em;}
+	.spec_xq td{height: 40px; border-bottom: 1px solid #f1f1f1;}
+	
+	.SSD_table{width:1200px;}
+	.SSD_table tr{ padding-left:100px;text-indent: 0;}
+	.SSD_table td{height: 40px; border-bottom: 1px solid #f1f1f1;padding-right:100px;padding-left:60px;}
+	.SSD_table .bg{    font-size: 16px;font-weight: bold;color:#000000;background: #f5fafe;    height: 40px;line-height: 40px;}
+
+	/* -----产品终极页tab切换内容样式 结束------ */	
+
+	
+	
+	/* Demo page only */
+	#about {
+	    color: #999;
+	    text-align: center;
+	    font: 0.9em Arial, Helvetica;
+	}
+	#about a {
+	    color: #777;
+	} 
+	.boottmkongbai{ height:5px;clear:both;}
+	.qudong_box { margin-top:35px; }
+	.qudong_box li{ width:480px; float:left; margin-bottom:40px; padding-left:50px; }
+	.qudong_box li{ line-height:24px;}
+    .qudongload{ width:100px;  text-align:center; float:left; margin-right:10px; margin-top:15px; }
+	.qudongload a{ color:#fff; display:block;  text-decoration:none;width:100px;height:35px; line-height:35px; background:#3c8ad5; margin-bottom:10px;}
+	.qudongload a:hover{ background:#1a75ce;}
+/* 详细介绍选项卡结束 */
+
+
+
+
+
