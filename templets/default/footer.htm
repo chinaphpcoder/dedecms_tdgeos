@@ -1,128 +1,48 @@
 <div class="homeboot">
-            <div class="homeboot_box">
-                <div class="homeboot_box_ma">
-                    <img src="/areas/__ZH_GB__/images/erweima.jpg" width="80" height="79">
-                    <p>
-                        官网手机版</p>
-                </div>
-                <div class="homeboot_box_nav">
-                    <p class="menu">
-                        <a href="/__ZH_GB__/Product5/OnLineMall">在线商城</a> <a href="/__ZH_GB__/Product5/ProductIndex">
-                            产品中心</a> <a href="/__ZH_GB__/News5/NewsIndex">新闻活动</a> <a href="/__ZH_GB__/home5/service">
-                                服务支持</a><a href="/__ZH_GB__/home5/about_galaxy">关于我们</a><a href="http://icafe.szgalaxy.com/">网吧在线</a><a href="/__ZH_GB__/home5/service_inquiry">真伪查询</a>
-                    </p>
-                    <p>
-                        邮箱：<a href="Mailto:support@szgalaxy.com">support@szgalaxy.com </a> 
-                    </p>
-                    <p>
-                        地址：深圳市福田区深南中路6011号NEO(A座)51楼</p>
-                    <p class="ban">
-                        版权所有 影驰科技 <a target="_bank" href="http://www.miitbeian.gov.cn">粤ICP备14038543号</a>
-                        <a href="http://www.cnzz.com/stat/website.php?web_id=5441549" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="http://icon.cnzz.com/img/pic.gif"></a>                     </p>
-                        
-                </div>
-                <div class="homeboot_box_right">
-                    <div class="tel">
-                        400-700- 3933</div>
-                    <p>
-                        周一至周五9:00-18:00</p>
-                    <ul>
-                        <li><a href="http://m.weibo.cn/p/1006061768582292/home?jumpfrom=weibocom#place" target="_blank">
-                            <img src="/areas/__ZH_GB__/images/xinlianico.png" border="0"></a><a href="http://m.weibo.cn/p/1006061768582292/home?jumpfrom=weibocom#place" target="_blank">微博</a></li>
-                        <li>
-                            <div class="weixin" onmouseover="this.className = 'weixin on';" onmouseout="this.className = 'weixin';">
-                                <a href="javascript:void();"></a>
-                                <div class="weixin_nr">
-                                    <div class="arrow">
-                                    </div>
-                                    <img src="/areas/__ZH_GB__/images/weixin.jpg" width="100" height="100">
-                                    关注官方微信
-                                </div>
-                            </div>
-                        </li>
-                        <li style="float: right;"><a href="#" style="padding-right: 28px;">微信</a><a href="http://tieba.baidu.com/f?ie=utf-8&amp;kw=%20影驰&amp;fr=search&amp;pn=0&amp;&amp;qq-pf-to=pcqq.c2c" target="_blank">
-                            <img src="/areas/__ZH_GB__/images/tiebaico.png" border="0"></a><a href="http://tieba.baidu.com/f?ie=utf-8&amp;kw=%20影驰&amp;fr=search&amp;pn=0&amp;&amp;qq-pf-to=pcqq.c2c" target="_blank">贴吧</a></li>
-                    </ul>
-                </div>
-            </div>
+    <div class="homeboot_box">
+        <div class="homeboot_box_ma">
+            <img src="/areas/__ZH_GB__/images/erweima.jpg" width="80" height="79">
+            <p>
+                官网手机版</p>
         </div>
-
-        
-<script type="text/javascript">
-        function dropMenu(obj) {
-            $(obj).each(function () {
-                var theSpan = $(this);
-                var theMenu = theSpan.find(".submenu");
-                var tarHeight = theMenu.height();
-                theMenu.css({ height: 0, opacity: 0 });
-
-                var t1;
-
-                function expand() {
-                    clearTimeout(t1);
-                    theSpan.find('a').addClass("selected");
-                    theMenu.stop().show().animate({ height: tarHeight, opacity: 1 }, 200);
-                }
-
-                function collapse() {
-                    clearTimeout(t1);
-                    t1 = setTimeout(function () {
-                        theSpan.find('a').removeClass("selected");
-                        theMenu.stop().animate({ height: 0, opacity: 0 }, 200, function () {
-                            $(this).css({ display: "none" });
-                        });
-                    }, 250);
-                }
-
-                theSpan.hover(expand, collapse);
-                theMenu.hover(expand, collapse);
-            });
-        }
-
-        $(document).ready(function () {
-            dropMenu(".drop-menu-effect");
-        });
-
-        //公共搜索
-        $(function () {
-            $('#key').bind('keypress', function (event) {
-                if (event.keyCode == "13") {
-                    var key = $("#key").val();
-                    window.location.href = "/__ZH_GB__/Product5/SearchProduct?key=" + key;
-                }
-            });
-        });
-        $(".btnSearch").click(function () {
-            var key = $("#key").val(); window.location.href = "/__ZH_GB__/Product5/SearchProduct?key=" + key;
-        })
-
-        //内部搜索
-        $(function () {
-            $('#key1').bind('keypress', function (event) {
-                if (event.keyCode == "13") {
-                    var key = $("#key1").val();
-                    window.location.href = "/__ZH_GB__/Product5/SearchProduct?key=" + key;
-                }
-            });
-        });
-        $(".btnSearch1").click(function () {
-            var key = $("#key1").val(); window.location.href = "/__ZH_GB__/Product5/SearchProduct?key=" + key;
-        })
-   
-        $(function () {
-            // 悬浮窗口
-            $(".yb_conct").hover(function () {
-                $(".yb_conct").css("right", "5px");
-                $(".yb_bar .yb_ercode").css('height', '200px');
-            }, function () {
-                $(".yb_conct").css("right", "-127px");
-                $(".yb_bar .yb_ercode").css('height', '53px');
-            });
-            // 返回顶部
-            $(".yb_top").click(function () {
-                $("html,body").animate({
-                    'scrollTop': '0px'
-                }, 300)
-            });
-        });
-</script>
+        <div class="homeboot_box_nav">
+            <p class="menu">
+                <a href="/__ZH_GB__/Product5/OnLineMall">在线商城</a> <a href="/__ZH_GB__/Product5/ProductIndex">
+                    产品中心</a> <a href="/__ZH_GB__/News5/NewsIndex">新闻活动</a> <a href="/__ZH_GB__/home5/service">
+                        服务支持</a><a href="/__ZH_GB__/home5/about_galaxy">关于我们</a><a href="http://icafe.szgalaxy.com/">网吧在线</a><a href="/__ZH_GB__/home5/service_inquiry">真伪查询</a>
+            </p>
+            <p>
+                邮箱：<a href="Mailto:support@szgalaxy.com">support@szgalaxy.com </a> 
+            </p>
+            <p>
+                地址：深圳市福田区深南中路6011号NEO(A座)51楼</p>
+            <p class="ban">
+                版权所有 影驰科技 <a target="_bank" href="http://www.miitbeian.gov.cn">粤ICP备14038543号</a>
+                <a href="http://www.cnzz.com/stat/website.php?web_id=5441549" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="http://icon.cnzz.com/img/pic.gif"></a>                     </p>
+                
+        </div>
+        <div class="homeboot_box_right">
+            <div class="tel">
+                400-700- 3933</div>
+            <p>
+                周一至周五9:00-18:00</p>
+            <ul>
+                <li><a href="http://m.weibo.cn/p/1006061768582292/home?jumpfrom=weibocom#place" target="_blank">
+                    <img src="/areas/__ZH_GB__/images/xinlianico.png" border="0"></a><a href="http://m.weibo.cn/p/1006061768582292/home?jumpfrom=weibocom#place" target="_blank">微博</a></li>
+                <li>
+                    <div class="weixin" onmouseover="this.className = 'weixin on';" onmouseout="this.className = 'weixin';">
+                        <a href="javascript:void();"></a>
+                        <div class="weixin_nr">
+                            <div class="arrow">
+                            </div>
+                            <img src="/areas/__ZH_GB__/images/weixin.jpg" width="100" height="100">
+                            关注官方微信
+                        </div>
+                    </div>
+                </li>
+                <li style="float: right;"><a href="#" style="padding-right: 28px;">微信</a><a href="http://tieba.baidu.com/f?ie=utf-8&amp;kw=%20影驰&amp;fr=search&amp;pn=0&amp;&amp;qq-pf-to=pcqq.c2c" target="_blank">
+                    <img src="/areas/__ZH_GB__/images/tiebaico.png" border="0"></a><a href="http://tieba.baidu.com/f?ie=utf-8&amp;kw=%20影驰&amp;fr=search&amp;pn=0&amp;&amp;qq-pf-to=pcqq.c2c" target="_blank">贴吧</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
