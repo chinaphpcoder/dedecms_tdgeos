@@ -65,7 +65,7 @@
             </div>
             <div id="news_right">
                 <ul>
-                    {dede:arclist titlelen=42 row=6}
+                    {dede:list titlelen=42 pagesize='5'}
                         <li>
                         <div class="news_pic">
                             <a target="_blank" href="[field:arcurl/]">
@@ -76,30 +76,27 @@
                             <div class="news_font_t">
                             <a href="[field:arcurl/]">[field:title /]</a></div>
                             <div class="news_font_c">
-                            <a target="_blank" href="[field:arcurl/]">[field:description function='cn_substr(@me,80)'/]...</a></div>
+                            <a target="_blank" href="[field:arcurl/]">[field:description function='cn_substr(@me,220)'/]...</a></div>
                             <div class="news_font_s">
                             <a target="_blank" href="[field:arcurl/]">阅读全文</a>
                             </div>
                         </div>
                         </li>
-                    {/dede:arclist}
+                    {/dede:list}
                 </ul>
             </div>
         </div>
+
+    <div class="content_pro_le">
+        <div class="pages">
+            <ul>
+                {dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}
+            </ul>
+        </div>
+    </div>
         
-        <div class="content_pro_le">
-            <div class="pages">
-                 <a href="/__ZH_GB__/News5/NewsIndex?index=1" class="dd">1</a>
-<a href="/__ZH_GB__/News5/NewsIndex?index=2">2</a>
-<a href="/__ZH_GB__/News5/NewsIndex?index=3">3</a>
-<a href="/__ZH_GB__/News5/NewsIndex?index=4">4</a>
-<a href="/__ZH_GB__/News5/NewsIndex?index=5">5</a>
- <a href="/__ZH_GB__/News5/NewsIndex?index=5">末页
-                </a><a href="javascript:void()">1 / 5</a>
-            </div>
-        </div>
-        <div class="kongbaigao">
-        </div>
+
+    <div class="kongbaigao"></div>
     </div>
         {dede:include filename="footer.htm"/}
         <!-- /footer -->

@@ -63,41 +63,14 @@
                       {/dede:channel}
                 </dl>
             </div>
-            <div id="news_right">
-                <ul>
-                    {dede:arclist titlelen=42 row=6}
-                        <li>
-                        <div class="news_pic">
-                            <a target="_blank" href="[field:arcurl/]">
-                                <img src="[field:picname/]" )"="" alt="">
-                            </a>
-                        </div>
-                        <div class="news_font">
-                            <div class="news_font_t">
-                            <a href="[field:arcurl/]">[field:title /]</a></div>
-                            <div class="news_font_c">
-                            <a target="_blank" href="[field:arcurl/]">[field:description function='cn_substr(@me,80)'/]...</a></div>
-                            <div class="news_font_s">
-                            <a target="_blank" href="[field:arcurl/]">阅读全文</a>
-                            </div>
-                        </div>
-                        </li>
-                    {/dede:arclist}
-                </ul>
+            <div id="news_right">              
+                <div class="news_detail_title">{dede:field.title/}</div>
+                <div class="news_right_time">时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</div>
+                <p class="product_title_line"></p>
+                {dede:field.body/}
             </div>
         </div>
         
-        <div class="content_pro_le">
-            <div class="pages">
-                 <a href="/__ZH_GB__/News5/NewsIndex?index=1" class="dd">1</a>
-<a href="/__ZH_GB__/News5/NewsIndex?index=2">2</a>
-<a href="/__ZH_GB__/News5/NewsIndex?index=3">3</a>
-<a href="/__ZH_GB__/News5/NewsIndex?index=4">4</a>
-<a href="/__ZH_GB__/News5/NewsIndex?index=5">5</a>
- <a href="/__ZH_GB__/News5/NewsIndex?index=5">末页
-                </a><a href="javascript:void()">1 / 5</a>
-            </div>
-        </div>
         <div class="kongbaigao">
         </div>
     </div>

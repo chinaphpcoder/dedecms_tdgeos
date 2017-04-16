@@ -81,7 +81,8 @@
 .content_pro_le ul {   clear:both;  width:1230px; margin:0 auto; 
     list-style-type: none; 
 }
-.content_pro_le ul li{ float:left; margin-bottom:20px;}
+.content_pro_le ul li{ display: inline; margin-bottom:20px;}
+/*.content_pro_le ul li a{display: block; text-align: center;}*/
 .review-item {
     position: relative;
     float: left;
