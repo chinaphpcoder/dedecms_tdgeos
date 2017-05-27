@@ -1,0 +1,82 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>影驰科技-全心致力于计算机硬件的生产和销售！</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="影驰科技是业内最具实力的显卡、电源、固态硬盘生产与销售公司。">
+    <meta name="keywords" content="显卡，影驰，影驰显卡，影驰官网，影驰科技，SSD，固态硬盘，电源，电脑电源，台式机电源，NVIDIA，英伟达，影驰首页，影迷会，影驰玩家俱乐部，影驰BBS">
+    <meta name="author" content="galaxy">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link href="{dede:global.cfg_templets_skin/}/style/public.css" rel="stylesheet" type="text/css">
+    <link href="{dede:global.cfg_templets_skin/}/style/home.css" rel="stylesheet" type="text/css">
+    <!--nav JS开始-->
+    <script src="{dede:global.cfg_templets_skin/}/js/jquery.min.js"></script>
+    <!--nav JS结束-->
+    <!--banner JS开始-->
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-banner.js"></script>
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/responsiveslides.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // Slideshow 
+            $("#slider01").responsiveSlides({
+                auto: true,
+                pager: false,
+                nav: true,
+                speed: 500,
+                timeout: 4000,
+                pager: true,
+                pauseControls: true,
+                namespace: "callbacks"
+            });
+        });
+    </script>
+    <!--banner JS结束-->
+    <!--专题活动 JS结束-->
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/mobilyslider.js"></script>
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/init.js"></script>
+    <!--专题活动 JS结束-->
+    <!--视频专区 JS结束-->
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/slider_v.js"></script>
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/init_v.js"></script>
+    <!--视频专 区JS结束-->
+    <link href="{dede:global.cfg_templets_skin/}/style/inside.css" rel="stylesheet" type="text/css">
+    <link href="{dede:global.cfg_templets_skin/}/style/product.css" rel="stylesheet" type="text/css">
+    
+    <link href="{dede:global.cfg_templets_skin/}/style/product_deail.css" rel="stylesheet" type="text/css">
+
+</head>
+    <body style="">
+        <!-- /head -->
+        {dede:include filename="head.htm"/}
+        <div class="content_all">
+        <div class="neiye_titel">
+            <strong>当前位置:</strong> {dede:field name='position'/} {dede:field.title/}
+        </div>
+        <div id="box-video">
+            <div id="video_left">
+                <dl>
+                    <dd>关于我们</dd>
+                      {dede:channel type='son' currentstyle="
+                      <dt><a href='#' class='video_left_on'>~typename~</a></dt>
+                      "}
+                      <dt><a href='[field:typeurl/]'>[field:typename/]</a></dt>
+                      {/dede:channel}
+                </dl>
+            </div>
+            <div id="news_right">              
+                <div class="news_detail_title">{dede:field.title/}</div>
+                <div class="news_right_time">时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</div>
+                <p class="product_title_line"></p>
+                {dede:field.body/}
+            </div>
+        </div>
+        
+        <div class="kongbaigao">
+        </div>
+    </div>
+        {dede:include filename="footer.htm"/}
+        <!-- /footer -->
+        {dede:include filename="footer_js.htm"/}
+        <!-- /footer_js -->
+    </body>
+</html>

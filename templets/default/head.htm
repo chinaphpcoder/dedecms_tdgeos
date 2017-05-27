@@ -3,19 +3,24 @@
     <li class="drop-menu-effect">
         <a href="/" class="logo" style=""><img src="{dede:global.cfg_templets_skin/}/images/logo.jpg" width="142" height="120"></a>
     </li>
-    {dede:channelartlist typeid='top' cacheid='channelsonlist'}
+    {dede:channelartlist typeid='top' cacheid='channelsonlist'}  
         <li class="drop-menu-effect">
             <a href='{dede:field name='typeurl'/}' ><span>{dede:field name='typename'/}</span></a>
-            <ul class="submenu news" style="opacity: 0; height: 0px; display: none;">
-                <li>
-                    <div style="padding-top: 30px;">
+            {dede:channel type='son' noself='yes' row='1'} 
+                <ul class="submenu news" style="opacity: 0; display: none;">
+                    <li>         
+                        <div style="padding-top: 30px;">
+            {/dede:channel} 
                     {dede:channel type='son' noself='yes'} 
                         <a href='[field:typelink/]'>[field:typename/]</a>
                     {/dede:channel} 
-                    </div>
-                </li>
-            </ul>
+            {dede:channel type='son' noself='yes' row='1'} 
+                        </div>          
+                    </li>
+                </ul>
+            {/dede:channel} 
         </li>
+        
     {/dede:channelartlist}
 </ul>
 </div>
