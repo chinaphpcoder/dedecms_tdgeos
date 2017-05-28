@@ -65,12 +65,12 @@
 <body style="">     
 {dede:include filename="head.htm"/}
 
-<div class="callbacks_container">
-    <ul class="callbacks callbacks1" id="slider01">
+<div class="callbacks_container" style="height: 400px">
+    <ul class="callbacks callbacks1" id="slider01" style="height: 400px">
     {dede:arclist titlelen='45' row='4'  channelid='17' addfields='url,image_carousel'}
 
-        <li id="callbacks1_s0" class="" style="display: list-item; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 500ms ease-in-out;">
-            <a href="[field:url /]"><img src="[field:image_carousel /]" /> </a>
+        <li id="callbacks1_s0" class="" style="display: list-item; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 500ms ease-in-out; height: 100%">
+            <a href="[field:url /]"><img style="height: 100%; width: 100%" src="[field:image_carousel /]" /> </a>
         </li>
     {/dede:arclist}
    </ul>
@@ -81,14 +81,14 @@
 <div class="product_hot_h2">明星产品推荐</div>
 <div class="product_hot_C">
     <div class="product_hot_left">
-    {dede:arclist titlelen='45' typeid='15' limit='0,1'}
+    {dede:arclist titlelen='45' typeid='15' limit='0,1' orderby='click' orderway='desc'}
         <a href="[field:arcurl /]"><img src="[field:picname/]" width="600" height="480">
         </a>
     {/dede:arclist}
     
     </div>
     <div class="product_hot_right">
-        {dede:arclist titlelen='45' row='2' typeid='15' limit='1,2'}
+        {dede:arclist titlelen='45' row='2' typeid='15' limit='1,2' orderby='click' orderway='desc'}
             <a href="[field:arcurl /]"><img src="[field:picname/]" width="600" height="240">
         </a>
         {/dede:arclist}

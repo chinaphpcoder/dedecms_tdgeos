@@ -195,7 +195,7 @@ border-bottom-left-radius: 5px;}
 	text-decoration:none;
 	height:61px;
 	width:38px;
-	background:transparent url("/areas/__ZH_GB__/images/themes.gif") no-repeat left top;
+	background:transparent url("../images/themes.gif") no-repeat left top;
 	margin-top:-30px;
 	display:none;
 
